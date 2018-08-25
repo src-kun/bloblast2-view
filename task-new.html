@@ -1,0 +1,122 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/scss/style.css">
+</head>
+<body>
+	<div id="right-panel" class="right-panel">
+		<div class="breadcrumbs">
+			<div class="">
+				<div class="page-header float-left">
+					<div class="page-title">
+						<ol class="breadcrumb text-right">
+							<li><a href="#">漏洞扫描</a></li>
+							<li><a href="#">任务</a></li>
+							<li class="active">新建任务</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content mt-3">
+			<div class="animated fadeIn">
+
+				<div class="row">
+
+					<div class="col-lg-6">
+						<div class="card">
+						<div class="card-header">
+							<strong>新建任务</strong>
+						</div>
+						<div class="card-body card-block">
+							<form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+								<div class="row form-group">
+									<div class="col col-md-3"><label for="text-input" class=" form-control-label">任务</label></div>
+									<div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" class="form-control"></div>
+								</div>
+								<div class="row form-group">
+									<div class="col col-md-3"><label for="text-input" class=" form-control-label">描述</label></div>
+									<div class="col-12 col-md-9"><input type="text" id="text-input" name="text-input" class="form-control"></div>
+								</div>
+								<div class="row form-group">
+									<div class="col col-md-3"><label for="textarea-input" class=" form-control-label">目标</label></div>
+									<div class="col-12 col-md-9"><textarea name="textarea-input" id="textarea-input" rows="9" placeholder="" class="form-control"></textarea></div>
+								</div>
+								<div class="row form-group">
+									<div class="col col-md-3"><label for="file-multiple-input" class=" form-control-label">上传目标文件</label></div>
+									<div class="col-12 col-md-9"><input type="file" id="file-multiple-input" name="file-multiple-input" multiple="" class="form-control-file"></div>
+								</div>
+								<div class="row form-group">
+									<div class="col col-md-3"><label for="select" class=" form-control-label">扫描类型</label></div>
+									<div class="col-12 col-md-9">
+									<select name="select" id="select" class="form-control">
+										<option value="0">全部</option>
+										<option value="1">密码爆破</option>
+										<option value="2">端口扫描</option>
+										<option value="3">子域名爆破</option>
+									</select>
+									</div>
+								</div>
+							<!-- <div class="row form-group">
+								<div class="col col-md-3"><label for="select" class=" form-control-label">字典</label></div>
+								<div class="col-12 col-md-9">
+								<select name="select" id="select" class="form-control">
+									<option value="0">字典</option>
+									<option value="1">字典1</option>
+									<option value="2">字典2</option>
+									<option value="3">字典3</option>
+								</select>
+								</div>
+							</div>-->
+							<!--<div class="row form-group">
+								<div class="col col-md-3"><label for="select" class=" form-control-label">模板</label></div>
+								<div class="col-12 col-md-9">
+								<select name="select" id="select" class="form-control">
+									<option value="0">模板</option>
+									<option value="1">模板1</option>
+									<option value="2">模板2</option>
+									<option value="3">模板3</option>
+								</select>
+								</div>
+							</div>-->
+							<!--<div class="row form-group">
+								<div class="col col-md-3"><label class=" form-control-label">工具</label></div>
+								<div class="col col-md-9">
+								<div class="form-check-inline form-check">
+									<label for="inline-radio1" class="form-check-label ">
+									<input type="radio" id="inline-radio1" name="inline-radios" value="nmap" class="form-check-input">Nmap
+									</label>
+									&nbsp;&nbsp;&nbsp;&nbsp;
+									<label for="inline-radio3" class="form-check-label ">
+									<input type="radio" id="inline-radio3" name="inline-radios" value="masscan" class="form-check-input">Masscan
+									</label>
+								</div>
+								</div>
+							</div>-->
+							</form>
+						</div>
+						<div class="card-footer">
+							<button type="submit" class="btn btn-primary btn-sm">
+							<i class="fa fa-dot-circle-o"></i> Submit
+							</button>
+							<button type="reset" class="btn btn-danger btn-sm">
+							<i class="fa fa-ban"></i> Reset
+							</button>
+						</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .animated -->
+		</div><!-- .content -->
+
+</body>
+</html>
